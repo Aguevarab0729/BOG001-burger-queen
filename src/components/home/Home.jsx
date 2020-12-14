@@ -10,14 +10,15 @@ const Home = () => {
         <img src={portada} className="Portada" alt="portada" />
         <p className= "Slogan">Armala - Comela - Disfrutala</p>
         <p className= "Rol">¿Cual es tu rol?</p>
-        <div className="Button-rol">
-        <button>Mesero</button> <button>Chef</button>
+        <div className="rolSection">
+        <button className="buttonOne">Mesero</button> 
+        <button className="buttonTwo">Chef</button>
+        <input type="text" className="nameEmployee" placeholder="Ingresa tu nombre y apellido" required title="Llena el campo"/>
+        <button className="buttonThree">Ingresar</button>
         </div>
     </div>
-    /*<footer className="footer">
-    <p> &copy; Todos los derechos reservados - |A.C.D|  -  BURGERLab   </p>
-    </footer>*/
   );
 };
+
 
 export default Home;
