@@ -1,6 +1,6 @@
-import firebase from 'firebase';
+import * as firebase from 'firebase';
 
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyB1CP4UAkddmQaKVtu69-nU5iNqnZ5wq-s",
     authDomain: "burger-queen-a7ace.firebaseapp.com",
     databaseURL: "https://burger-queen-a7ace.firebaseio.com",
@@ -11,6 +11,11 @@ const firebaseConfig = {
     measurementId: "G-HS40FT2JBX"
 };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 export default firebase;
+
+export const db = firebase.firestore();
+db.settings({
+    timeStampsInSnapshots: true,
+});

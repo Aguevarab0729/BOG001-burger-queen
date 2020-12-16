@@ -1,9 +1,8 @@
 import React from 'react';
-import { render } from "@testing-library/react";
 import './Order.scss'
 
 const Order = () => {
-    render();
+    
     return (
         <div className="containerResumeOrder">
             <hr></hr>
