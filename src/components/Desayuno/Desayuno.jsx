@@ -3,7 +3,7 @@ import "./Desayuno.scss";
 import MenuItem from '../shared/menuItem'
 import data from '../../data/menu.json';
 
-const Desayuno = (props) => {
+const Desayuno = () => {
   const openMenu = (e, name) => {
     e.preventDefault();
     console.log("El link fue clickeado");
