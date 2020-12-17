@@ -15,6 +15,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
+db.settings({
+    timeStampsInSnapshots: true,
+});
+
 const authAnonymously = () => {
     return firebase.auth().signInAnonymously();
 }
